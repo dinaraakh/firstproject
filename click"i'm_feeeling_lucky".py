@@ -11,11 +11,6 @@ options = Options()
 
 driver.get("https://www.google.ru")
 
-# search_field = driver.find_element(By.NAME, "q")
-# time.sleep(5)
-# search_field.send_keys('помидор')
-# time.sleep(10)
-
 search_botton = driver.find_element(By.NAME, "btnK")
 time.sleep(10)
 search_botton.click()
