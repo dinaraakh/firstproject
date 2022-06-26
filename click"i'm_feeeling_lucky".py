@@ -11,12 +11,12 @@ options = Options()
 
 driver.get("https://www.google.ru")
 
-search_botton = driver.find_element(By.NAME, "btnK")
-time.sleep(10)
+search_botton = driver.find_element(By.XPATH, "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[2]")
+time.sleep(2)
 search_botton.click()
 
+time.sleep(2)
 
-# assert "Помидор – описание, польза и вред, калорийность ..." in driver.page_source
 driver.close()
 
 pass
