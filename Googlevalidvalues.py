@@ -15,9 +15,9 @@ search_field = driver.find_element(By.NAME, "q")
 search_field.send_keys('помидор')
 search_field.send_keys(Keys.RETURN)
 
-time.sleep(8)
+
 assert "Помидор – описание, польза и вред, калорийность ..." in driver.page_source
-time.sleep(5)
+time.sleep(3)
 driver.close()
 
 pass
